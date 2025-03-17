@@ -24,7 +24,7 @@ public class Autor {
     @Column(name = "nacionalidade")
     private String nacionalidade;
 
-    @OneToMany(mappedBy = "autor")
+    @Transient
     private List<Livro> livros;
 
     public UUID getId() {

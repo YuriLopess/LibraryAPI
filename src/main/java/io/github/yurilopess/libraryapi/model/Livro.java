@@ -1,6 +1,8 @@
 package io.github.yurilopess.libraryapi.model;
 
 import jakarta.persistence.*;
+
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -77,7 +79,7 @@ public class Livro {
         return preco;
     }
 
-    public void setPreco(float preco) {
+    public void setPreco(int preco) {
         this.preco = preco;
     }
 
